@@ -1,0 +1,1 @@
+即将MYSQLI_ASSOC 换成 MYSQLI_NUM，即修复该问题
