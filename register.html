@@ -9,18 +9,47 @@ form {
 } 
 </style> 
 </head> 
-<body> 
-  
+<body bgcolor="#4169E1"> 
+ <div style="position: absolute; left: 50%; top: 50%;width: 500px; margin-left:-250px; margin-top: -200px">
+ <div style="background: #FFFFFF; padding: 20px;border-radius: 4px;box-shadow: 5px 5px 20px #444444" >
  <form action="register.php" method="post" name="form_register"
- onsubmit="return check()"> 
- 用户名<input type="text" name="username" id="username"><br> 
- 密码<input type="password" name="password" id="password"><br> 
- 确认密码<input type="password" name="assertpassword" id="assertpassword"><br> 
- <input type="submit" value="注册"> 
-  
+ onsubmit="return check()" action="#"> 
+ <table align="center">
+ <tr>
+ <td>用户名</td> 
+ <td>
+ <input type="text" name="username" id="username">
+ </td>
+ </tr>
+ <tr>
+ <td>密码</td> 
+ <td>
+ <input type="password" name="password" id="password">
+ </td>
+ </tr>
+  <tr>
+ <td>确认密码 </td> 
+ <td>
+ <input type="password" name="assertpassword" id="assertpassword">
+ </td>
+ </tr>
+  <tr>
+ <td>
+
+ </td> 
+ <td>
+ <button  type="button"onClick="back();">返回登陆</button>
+ <input type="submit" value="注册">
+ </td>
+ </tr>
+ </table>
+ </div></div>
  </form> 
   
  <script type="text/javascript"> 
+ function back(){
+ location.href="index.html"
+ }
  function check() { 
  var username=document.getElementById("username").value; 
  var password=document.getElementById("password").value; 
